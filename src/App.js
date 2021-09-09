@@ -8,6 +8,7 @@ function App() {
   const [langs, setLangs] = useState(LANGUAGES);
 
   const addLang = (lang) => {
+    setLangs([...langs, lang]);
     console.log(lang);
   }
   return (

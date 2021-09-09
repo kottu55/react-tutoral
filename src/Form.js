@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
-export const Form = () => {
+export const Form = ( {onAddLang} ) => {
     const [text, setText] = useState('');
     const submitForm = (event) => {
         event.preventDefault();
         onAddLang(text);
     }
-    
+
     return (
     <div>
         <h4>新しい言語の追加</h4>
